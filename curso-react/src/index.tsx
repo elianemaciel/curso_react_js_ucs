@@ -4,6 +4,9 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './pages/home.page';
+import BookForm from './pages/BookForm.page';
+import { IBook } from './interfaces/IBook.interface';
+import BookList from './pages/BookList.page';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -13,6 +16,8 @@ root.render(
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/books/create" element={<BookForm onAddBook={(book: IBook): void => {}} />} />
+        <Route path='/books/list' element={<BookList books={[]} />} />
       </Routes>
     </Router>
   </React.StrictMode>
