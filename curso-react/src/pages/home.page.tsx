@@ -1,5 +1,4 @@
 import ProfileComponent from '../components/ProfileComponent/profile.component';
-import './App.css';
 
 const HomePage = () => {
   return (

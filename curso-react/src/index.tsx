@@ -17,7 +17,7 @@ root.render(
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/books/create" element={<BookForm onAddBook={(book: IBook): void => {}} />} />
-        <Route path='/books/list' element={<BookList books={[]} />} />
+        <Route path='/books/list' element={<BookList />} />
       </Routes>
     </Router>
   </React.StrictMode>
