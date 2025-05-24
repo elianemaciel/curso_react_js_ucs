@@ -18,7 +18,7 @@ const BookList = () => {
             }
         })
         setBooks(listBooks)
-    }, [])
+    }, [potterService])
 
     useEffect(() => {
         handleGetBooks()

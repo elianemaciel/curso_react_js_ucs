@@ -15,7 +15,7 @@ const BookForm = ({ onAddBook }: BookFormProps) => {
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-        const { errors, hasErrors} = validate({
+        const { hasErrors} = validate({
             id: 0,
             title,
             author,
