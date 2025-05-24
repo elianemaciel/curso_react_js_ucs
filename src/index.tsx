@@ -16,8 +16,11 @@ root.render(
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/books/create" element={<BookForm onAddBook={(book: IBook): void => {}} />} />
-        <Route path='/books/list' element={<BookList />} />
+        <Route
+          path="/books/create"
+          element={<BookForm onAddBook={(book: IBook): void => {}} />}
+        />
+        <Route path="/books/list" element={<BookList />} />
       </Routes>
     </Router>
   </React.StrictMode>
